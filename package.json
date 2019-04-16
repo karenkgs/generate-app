@@ -1,5 +1,5 @@
 {
-  "name": "create-app",
+  "name": "generate-app",
   "version": "0.0.1",
   "description": "Template project for generic code",
   "main": "dist/main.js",

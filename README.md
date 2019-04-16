@@ -1,4 +1,4 @@
-# create-app
+# generate-app
 Install it from npm and use it.
 
 #### Custom boilerplate code generator.
@@ -12,10 +12,10 @@ $ npm
 ##### Install project
 Inside of the root folder
 ```sh
-$ npm install create-app
+$ npm install generate-app
 ```
 
 ##### Usage
 ```sh
-$ create-app
+$ generate-app
 ```
