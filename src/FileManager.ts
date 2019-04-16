@@ -6,7 +6,7 @@ import { isNullOrUndefined } from 'util';
 export default class FileManager {
     public static createDirectoryContent(templatePath: string, projectName: string, projectChoice: string): (Error | boolean) {
         const USER_CURRENT_DIRECTORY = process.cwd();
-        const source = sources.gitSSHSources.get(projectChoice);
+        const source = sources.gitHTTPSSources.get(projectChoice);
         if (!isNullOrUndefined(source)) {
             try {
                 const filesToCreate = fs.readdirSync(templatePath);

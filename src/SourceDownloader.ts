@@ -27,7 +27,7 @@ export default class SourceDownloader {
     }
 
     public download(sourceName: string, directoryToCloneTo?: string): Promise<any> {
-        const source = sources.gitSSHSources.get(sourceName);
+        const source = sources.gitHTTPSSources.get(sourceName);
         if (isNullOrUndefined(source)) {
             return new Promise((reject) =>
                 reject('Source not found')
