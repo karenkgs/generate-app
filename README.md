@@ -22,3 +22,9 @@ $ npm install generate-app
 ```sh
 $ generate-app
 ```
+
+##### Run locally
+Inside of the root folder
+```sh
+$ npm start
+```
