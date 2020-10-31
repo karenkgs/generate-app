@@ -1,13 +1,12 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import * as sources from './utils/sources';
-import { isNullOrUndefined } from 'util';
 
 export default class FileManager {
     public static createDirectoryContent(templatePath: string, projectName: string, projectChoice: string): (Error | boolean) {
         const USER_CURRENT_DIRECTORY = process.cwd();
         const source = sources.gitHTTPSSources.get(projectChoice);
-        if (!isNullOrUndefined(source)) {
+        if (source !== null && source !== undefined) {
             try {
                 const filesToCreate = fs.readdirSync(templatePath);
                 filesToCreate.forEach(file => {
