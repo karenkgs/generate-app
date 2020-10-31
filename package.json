@@ -4,11 +4,9 @@
   "description": "Template project for generic code",
   "main": "dist/main.js",
   "scripts": {
-    "test": "echo 'no unit tests'",
+    "test": "node_modules/jest/bin/jest.js",
     "start": "node dist/main.js",
-    "build": "tsc -p ./",
-    "test-unit": "echo 'no unit tests'",
-    "test-integration": "echo 'no integration tests'"
+    "build": "tsc -p ./"
   },
   "rootDirs": [
     "src",
@@ -21,7 +19,9 @@
   "devDependencies": {
     "@types/inquirer": "0.0.43",
     "ts-node": "^8.4.1",
-    "typescript": "^3.6.4"
+    "typescript": "^3.6.4",
+    "jest": "^26.6.1",
+    "ts-jest": "^26.4.3"
   },
   "bin": {
     "generate-app": "./dist/main.js"
