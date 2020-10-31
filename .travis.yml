@@ -11,6 +11,10 @@ env:
 matrix:
   fast_finish: true
 
+branches:
+  only:
+  - master
+
 install:
   - npm uninstall typescript --no-save
   - npm install
