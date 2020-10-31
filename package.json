@@ -6,7 +6,9 @@
   "scripts": {
     "test": "node_modules/jest/bin/jest.js",
     "start": "node dist/main.js",
-    "build": "tsc -p ./"
+    "build": "tsc -p ./",
+    "test:coverage": "npm run test --coverage",
+    "coveralls": "node_modules/jest/bin/jest.js --coverage && cat ./coverage/lcov.info | coveralls"
   },
   "rootDirs": [
     "src",
@@ -18,10 +20,11 @@
   },
   "devDependencies": {
     "@types/inquirer": "0.0.43",
-    "ts-node": "^8.4.1",
-    "typescript": "^3.6.4",
+    "coveralls": "^3.1.0",
     "jest": "^26.6.1",
-    "ts-jest": "^26.4.3"
+    "ts-jest": "^26.4.3",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.4"
   },
   "bin": {
     "generate-app": "./dist/main.js"
