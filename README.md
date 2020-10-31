@@ -2,6 +2,7 @@
 > Install it from npm and use it.
 
 [![Build Status](https://travis-ci.com/karenkgs/generate-app.svg?branch=master)](https://travis-ci.com/github/karenkgs/generate-app)
+[![Coverage Status](https://coveralls.io/repos/github/karenkgs/generate-app/badge.svg?branch=master)](https://coveralls.io/github/karenkgs/generate-app?branch=master)
 
 #### Custom boilerplate code generator.
 
