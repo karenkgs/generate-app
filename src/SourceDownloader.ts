@@ -1,6 +1,5 @@
 import { spawn } from 'child_process';
 import * as sources from './utils/sources';
-import { isNullOrUndefined } from 'util';
 
 export default class SourceDownloader {
 
@@ -28,7 +27,7 @@ export default class SourceDownloader {
 
     public download(sourceName: string, directoryToCloneTo?: string): Promise<any> {
         const source = sources.gitHTTPSSources.get(sourceName);
-        if (isNullOrUndefined(source)) {
+        if (source === null || source === undefined) {
             return new Promise((reject) =>
                 reject('Source not found')
             );
