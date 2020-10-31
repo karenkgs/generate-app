@@ -5,23 +5,9 @@ node_js:
   - '12'
   - '10'
 
-env:
-  - workerCount=3 timeout=600000
-
-matrix:
-  fast_finish: true
-
-branches:
-  only:
-  - master
-
-install:
-  - npm uninstall typescript --no-save
-  - npm install
-
 cache:
   directories:
     - node_modules
 
 git:
-  depth: 1
+  depth: false
